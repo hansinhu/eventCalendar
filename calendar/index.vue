@@ -72,7 +72,7 @@
 </template>
 
 <script>
-  import userScheduleRead from './mock.js'
+  import userScheduleRead from './mockeasy.js'
   export default {
     name: 'calendar',
     data () {
@@ -180,12 +180,21 @@
             obj._eY = dayWeekYi // 纵坐标Y
             allLen = allLen + 1
             objList.push(obj)
-            let eventPoint = this.getEventY(dayWeekIndex, dayEventLen, weekPoint).pointArr // 新点位放入weekPoint
+            let eventPoint = this.getEventPoint(obj._eX, obj._eY, obj._eLen)
+            // let eventPoint = this.getEventY(dayWeekIndex, dayEventLen, weekPoint).pointArr // 新点位放入weekPoint
             weekPoint = weekPoint.concat(eventPoint)
             userScheduleRead[i]._eY = obj._eY
           }
         })
         return objList
+      },
+      getEventPoint (eX, eY, eLen) {
+        let arr = []
+        for (let i = 0; i < eLen; i++) {
+          // Y坐标不变，X递增
+          arr.push(eX + i + ',' + eY)
+        }
+        return arr
       },
       // 求Y坐标
       getEventY (weekIndex, len, allPoint, yI = 0) {
