@@ -5,8 +5,10 @@
 
 > 日程排列
 
-> 
+> 1.0: 
 ![demo](https://github.com/hansinhu/eventCalendar/blob/master/hansinevet.png)
+> 2.0:
+![demo](https://github.com/hansinhu/eventCalendar/blob/master/calendar-v2.0.png)
 
 
 ```js
