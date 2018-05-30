@@ -9,6 +9,12 @@
 ![demo](https://github.com/hansinhu/eventCalendar/blob/master/hansinevet.png)
 > 2.0:
 ![demo](https://github.com/hansinhu/eventCalendar/blob/master/calendar-v2.0.png)
+> 3.0: 完成版，加入了Elemen_ui, store, http-request 使用需谨慎
+> 抽空把这个组件独立出来放到npm方便使用
+![demo](https://github.com/hansinhu/eventCalendar/blob/master/3.0-1.png)
+![demo](https://github.com/hansinhu/eventCalendar/blob/master/3.0-2.png)
+![demo](https://github.com/hansinhu/eventCalendar/blob/master/3.0-3.png)
+![demo](https://github.com/hansinhu/eventCalendar/blob/master/3.0-4.png)
 
 
 ```js
